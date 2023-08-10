@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tAHsbzkOOm+GPk+6D4sHohpzyOB2XfMoRrvpmpInm8auXi4+t8ARCnpFdcSSJJzld57niVLjoSNfoCqgbVhXRA==",
+  "dgSpecHash": "qAUAg/68GgK/uxTplMFA0dpnuwixKdnvxSc1UAh2smIUnuTiOg71trdxGko+eEdAhOdV6UVaaPmLQMDLZ8jRtQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\magai\\OneDrive\\Documentos\\Mttechne\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.UnitTests\\Mttechne.Backend.Junior.UnitTests.csproj",
+  "projectFilePath": "C:\\Users\\magai\\OneDrive\\Documentos\\Mttechne\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.UnitTests\\Mttechne.Backend.Junior.UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\magai\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\magai\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",

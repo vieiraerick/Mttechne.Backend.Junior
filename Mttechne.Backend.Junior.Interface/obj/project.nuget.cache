@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S+P5JarAk7zU8gz0B8zEVBhS3/QzeGOxJV7uFYwpeLK42+ldMgySpxMp3nKMOF6/f1JtN0wEK4VO9xfgefTIWg==",
+  "dgSpecHash": "87dHKfcOyMhvKJUMPY/KrA7JWY3MCcJW8QnxTqBt6kg6AmN1e0i1/lxieIDyMTkDlAfX6gEOZDuS/XuqqgCbyQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\magai\\OneDrive\\Documentos\\Mttechne\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\Mttechne.Backend.Junior.Interface.csproj",
+  "projectFilePath": "C:\\Users\\magai\\OneDrive\\Documentos\\Mttechne\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\Mttechne.Backend.Junior.Interface.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\magai\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\magai\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0-preview.7.23375.6\\microsoft.extensions.dependencyinjection.8.0.0-preview.7.23375.6.nupkg.sha512",

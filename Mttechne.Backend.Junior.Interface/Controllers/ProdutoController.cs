@@ -16,4 +16,7 @@ public class ProdutoController : ControllerBase
 
     [HttpGet]
     public async Task<IActionResult> GetListaProdutos() => Ok(_service.GetListaProdutos());
+
+    [HttpGet("{nome}")]
+    public async Task<IActionResult> GetListaProdutosProNome([FromRoute] string nome) => Ok(_service.GetListaProdutosPorNome(nome));
 }

@@ -22,4 +22,11 @@ public class ProdutoService : IProdutoService
         
         return produtosCadastrados;
     }
+
+    public List<Produto> GetListaProdutosPorNome(string nome)
+    {
+        var listaProdutos = GetListaProdutos();
+
+        return listaProdutos.Where(x => x.Nome == nome).ToList();
+    }
 }
