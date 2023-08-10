@@ -8,7 +8,7 @@ A solução proposta é um sistema de produtos de informática. Foi implementado
 
 ### Busca a listagem de produtos a partir de um nome
 
-Aproveite o método já implementado de busca e faça as validações necessárias para que o sistema se mantenha íntegro, caso o usuário tente forçar uma busca sem informar um nome, ou qualquer outro cenário que você julgar necessário. Implemente também uma validação para que sejam retornados registros dos quais os nomes contenham o valor informado, independente de acentuação e letras maíusculas e minúsculas, ou o texto não seja informado por completo.
+Aproveite o método já implementado de busca e faça as validações necessárias para que o sistema se mantenha íntegro, caso o usuário tente forçar uma busca sem informar um nome, ou qualquer outro cenário que você julgar necessário. Implemente também uma validação para que sejam retornados registros dos quais os nomes contenham o valor informado, independente de acentuação e letras maiúculas e minúsculas, ou o texto não seja informado por completo.
 
 ### Busca ordenada por valor
 
