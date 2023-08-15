@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "87dHKfcOyMhvKJUMPY/KrA7JWY3MCcJW8QnxTqBt6kg6AmN1e0i1/lxieIDyMTkDlAfX6gEOZDuS/XuqqgCbyQ==",
+  "dgSpecHash": "KnPSrz0K8kS+ZAg0P8GiuUHtBCJEqfOcJz4FC6JJ1KUO/VHMWHKo5tDqFIHK0JkF4fb12PuyB8vLcluwWiP3EQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\magai\\OneDrive\\Documentos\\Mttechne\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\Mttechne.Backend.Junior.Interface.csproj",
+  "projectFilePath": "C:\\Workspace\\Desafios\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\Mttechne.Backend.Junior.Interface.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\magai\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
-    "C:\\Users\\magai\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0-preview.7.23375.6\\microsoft.extensions.dependencyinjection.8.0.0-preview.7.23375.6.nupkg.sha512",
-    "C:\\Users\\magai\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0-preview.7.23375.6\\microsoft.extensions.dependencyinjection.abstractions.8.0.0-preview.7.23375.6.nupkg.sha512",
-    "C:\\Users\\magai\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
-    "C:\\Users\\magai\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
-    "C:\\Users\\magai\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
-    "C:\\Users\\magai\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
-    "C:\\Users\\magai\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+    "C:\\Users\\julia\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\julia\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0-preview.7.23375.6\\microsoft.extensions.dependencyinjection.8.0.0-preview.7.23375.6.nupkg.sha512",
+    "C:\\Users\\julia\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0-preview.7.23375.6\\microsoft.extensions.dependencyinjection.abstractions.8.0.0-preview.7.23375.6.nupkg.sha512",
+    "C:\\Users\\julia\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\julia\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\julia\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\julia\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\julia\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
   ],
   "logs": []
 }
