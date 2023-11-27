@@ -26,11 +26,11 @@ Crie um método que retorne apenas os valores máximos de cada produto, desconsi
 
 # Teste .NET C# Pleno
 
-## Considerações finais
-
 ### Integração com banco de dados
 
 Deverão ser implementadas todas as exigencias acima, porém integrando um banco de dados de escolha do candidato. As implementações deverão ser feitas com o Entity Framework. Todas as entidades deverão ter suas migrations salvas em uma pasta junto dos repositórios.
+
+## Considerações finais
 
 Todas as interações do usuário serão feitas via Swagger, portanto as entradas e saídas de informações serão através da API, sem uso de console.
 Clone esse repositório e crie uma branch com seu nome, no fim do teste crie um pull request para a branch 'develop'.
