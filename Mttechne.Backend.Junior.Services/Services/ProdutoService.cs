@@ -1,4 +1,6 @@
 ﻿using Mttechne.Backend.Junior.Services.Model;
+using System.Globalization;
+using System.Text;
 
 namespace Mttechne.Backend.Junior.Services.Services;
 
@@ -23,10 +25,96 @@ public class ProdutoService : IProdutoService
         return produtosCadastrados;
     }
 
-    public List<Produto> GetListaProdutosPorNome(string nome)
+    public List<Produto> GetListaProdutosByName(string nome)
+    {
+        if (string.IsNullOrEmpty(nome))
+        {
+            throw new ArgumentNullException(nameof(nome), "O nome do produto não pode ser nulo ou vazio.");
+        }
+
+        var listaProdutos = GetListaProdutos();
+
+        return listaProdutos.Where(x => IsMatch(x.Nome, nome)).ToList();
+    }
+
+    public List<Produto> GetListaProdutosByPriceAscendinge()
+    {
+        var listaProdutos = GetListaProdutos(); 
+
+        return listaProdutos.OrderBy(x => x.Valor).ToList();
+    }
+
+    public List<Produto> GetListaProdutosByPriceDescending()
     {
         var listaProdutos = GetListaProdutos();
 
-        return listaProdutos.Where(x => x.Nome == nome).ToList();
+        return listaProdutos.OrderByDescending(x => x.Valor).ToList();
+    }
+
+    public List<Produto> GetListaProdutosInPriceRange(int minPrice, int maxPrice)
+    {
+        var listaProdutos = GetListaProdutos();
+        List<Produto> produtosInRange = new List<Produto>();
+
+        foreach (var produto in listaProdutos)
+        {
+            if (produto.Valor >= minPrice && produto.Valor <= maxPrice)
+            {
+                produtosInRange.Add(produto);
+            }
+        }
+
+        return produtosInRange;
+    }
+
+    public List<Produto> GetListaProdutosPerMaxValue()
+    {
+        var listaProdutos = GetListaProdutos();
+
+        var maxValuesPerProduct = listaProdutos
+            .GroupBy(produto => produto.Nome)
+            .Select(group => group.OrderByDescending(produto => produto.Valor).First())
+            .ToList();
+
+        return maxValuesPerProduct;
+    }
+
+    public List<Produto> GetListaProdutosPerMinValue()
+    {
+        var listaProdutos = GetListaProdutos();
+
+        var minValuesPerProduct = listaProdutos
+            .GroupBy(produto => produto.Nome)
+            .Select(group => group.OrderBy(produto => produto.Valor).First())
+            .ToList();
+
+        return minValuesPerProduct;
+    }
+
+    static string RemoveDiacritics(string text)
+    {
+        string normalizedText = text.Normalize(NormalizationForm.FormD);
+        var stringBuilder = new System.Text.StringBuilder();
+
+        foreach (char c in normalizedText)
+        {
+            if (CharUnicodeInfo.GetUnicodeCategory(c) != UnicodeCategory.NonSpacingMark)
+            {
+                stringBuilder.Append(c);
+            }
+        }
+
+        return stringBuilder.ToString();
+    }
+
+    static bool IsMatch(string source, string target)
+    {
+        string normalizedSource = RemoveDiacritics(source);
+        string normalizedTarget = RemoveDiacritics(target);
+
+        normalizedSource = normalizedSource.ToLower();
+        normalizedTarget = normalizedTarget.ToLower();
+
+        return normalizedSource.Contains(normalizedTarget);
     }
 }
