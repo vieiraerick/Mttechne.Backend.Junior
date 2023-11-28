@@ -37,5 +37,17 @@ public class ProdutoService : IProdutoService
         return listaProdutos.Where(x => x.Valor >= valorInicial && x.Valor <= valorFinal).ToList();
     }
 
+    public List<Produto> GetListaProdutosPorValorMaximo()
+    {
+        var listaProdutos = GetListaProdutos();
 
+        return listaProdutos.OrderByDescending(x => x.Valor).DistinctBy(x=>x.Nome).ToList();
+    }
+
+    public List<Produto> GetListaProdutosPorValorMinimo()
+    {
+        var listaProdutos = GetListaProdutos();
+
+        return listaProdutos.OrderBy(x => x.Valor).DistinctBy(x => x.Nome).ToList();
+    }
 }

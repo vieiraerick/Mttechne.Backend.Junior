@@ -29,4 +29,8 @@ public class ProdutoController : ControllerBase
             return BadRequest("Os valores do filtro estão inválidos");
         return Ok(_service.GetListaProdutosPorIntervaloValores(valorInicial,valorFinal));
     }
+    [HttpGet("BuscaProdutoValorMaximo")]
+    public async Task<IActionResult> GetListaProdutosPorValorMaximo() => Ok(_service.GetListaProdutosPorValorMaximo());
+    [HttpGet("BuscaProdutoValorMinimo")]
+    public async Task<IActionResult> GetListaProdutosPorValorMinimo() => Ok(_service.GetListaProdutosPorValorMinimo());
 }
