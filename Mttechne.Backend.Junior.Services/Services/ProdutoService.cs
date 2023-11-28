@@ -29,4 +29,13 @@ public class ProdutoService : IProdutoService
 
         return listaProdutos.Where(x => x.Nome == nome).ToList();
     }
+
+    public List<Produto> GetListaProdutosPorIntervaloValores(double valorInicial, double valorFinal)
+    {
+        var listaProdutos = GetListaProdutos();
+
+        return listaProdutos.Where(x => x.Valor >= valorInicial && x.Valor <= valorFinal).ToList();
+    }
+
+
 }
