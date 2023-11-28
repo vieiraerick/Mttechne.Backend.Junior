@@ -6,4 +6,7 @@ public interface IProdutoService
 {
     List<Produto> GetListaProdutos();
     List<Produto> GetListaProdutosPorNome(string nome);
+    List<Produto> GetListaProdutosPorIntervaloValores(double valorInicial, double valorFinal);
+    List<Produto> GetListaProdutosPorValorMaximo();
+    List<Produto> GetListaProdutosPorValorMinimo();
 }

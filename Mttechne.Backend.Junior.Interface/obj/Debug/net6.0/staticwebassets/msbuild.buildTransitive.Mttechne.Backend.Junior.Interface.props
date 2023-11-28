@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Mttechne.Backend.Junior.Interface.props" />
+</Project>

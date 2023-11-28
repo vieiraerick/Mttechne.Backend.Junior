@@ -1,11 +1,27 @@
 {
   "version": 2,
-  "dgSpecHash": "8K7oXs8zVnjCLvj72fWZpDqXkb7T+xVZHX4+uPPANCN8k39Eohw8gyjq71lkL/ReChCqReJBoVVZnDOfz/2A0Q==",
+  "dgSpecHash": "JUt6KciiYTLpAOMc+OpBwjlBj6JwsUKNGuGs8hmNvtBUJj0LlFYhBKCeHFG/SlmQ0jfv5QaGahV/3jx/MpUKEA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\magai\\OneDrive\\Documentos\\Mttechne\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj",
+  "projectFilePath": "C:\\Users\\felip\\source\\repos\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\magai\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0-preview.7.23375.6\\microsoft.extensions.dependencyinjection.8.0.0-preview.7.23375.6.nupkg.sha512",
-    "C:\\Users\\magai\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0-preview.7.23375.6\\microsoft.extensions.dependencyinjection.abstractions.8.0.0-preview.7.23375.6.nupkg.sha512"
+    "C:\\Users\\felip\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.25\\microsoft.entityframeworkcore.6.0.25.nupkg.sha512",
+    "C:\\Users\\felip\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.25\\microsoft.entityframeworkcore.abstractions.6.0.25.nupkg.sha512",
+    "C:\\Users\\felip\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.25\\microsoft.entityframeworkcore.analyzers.6.0.25.nupkg.sha512",
+    "C:\\Users\\felip\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.25\\microsoft.entityframeworkcore.relational.6.0.25.nupkg.sha512",
+    "C:\\Users\\felip\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\felip\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
+    "C:\\Users\\felip\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\felip\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0-preview.7.23375.6\\microsoft.extensions.dependencyinjection.8.0.0-preview.7.23375.6.nupkg.sha512",
+    "C:\\Users\\felip\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0-preview.7.23375.6\\microsoft.extensions.dependencyinjection.abstractions.8.0.0-preview.7.23375.6.nupkg.sha512",
+    "C:\\Users\\felip\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
+    "C:\\Users\\felip\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\felip\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\felip\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\felip\\.nuget\\packages\\mysqlconnector\\2.1.2\\mysqlconnector.2.1.2.nupkg.sha512",
+    "C:\\Users\\felip\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\6.0.2\\pomelo.entityframeworkcore.mysql.6.0.2.nupkg.sha512",
+    "C:\\Users\\felip\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
+    "C:\\Users\\felip\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
+    "C:\\Users\\felip\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
