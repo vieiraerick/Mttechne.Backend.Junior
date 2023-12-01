@@ -1,32 +1,70 @@
-﻿using Mttechne.Backend.Junior.Services.Model;
+﻿using Mttechne.Backend.Junior.Services.Data.Repositories;
+using Mttechne.Backend.Junior.Services.Model;
+using System.Globalization;
+using System.Text;
 
 namespace Mttechne.Backend.Junior.Services.Services;
 
 public class ProdutoService : IProdutoService
 {
+    private readonly IProdutoRepository _produtoRepository;
+
+    public ProdutoService(IProdutoRepository produtoRepository)
+    {
+        _produtoRepository = produtoRepository;
+    }
+
     public List<Produto> GetListaProdutos()
     {
-        Produto produto1 = new Produto() { Nome = "Placa de Vídeo", Valor = 1000 };
-        Produto produto2 = new Produto() { Nome = "Placa de Vídeo", Valor = 1500 };
-        Produto produto3 = new Produto() { Nome = "Placa de Vídeo", Valor = 1350 };
-        Produto produto4 = new Produto() { Nome = "Processador", Valor = 2000 };
-        Produto produto5 = new Produto() { Nome = "Processador", Valor = 2100 };
-        Produto produto6 = new Produto() { Nome = "Memória", Valor = 300 };
-        Produto produto7 = new Produto() { Nome = "Memória", Valor = 350 };
-        Produto produto8 = new Produto() { Nome = "Placa mãe", Valor = 1100 };
-        
-        List<Produto> produtosCadastrados = new List<Produto>()
-        {
-            produto1, produto2, produto3, produto4, produto5, produto6, produto7, produto8
-        };
-        
-        return produtosCadastrados;
+        return _produtoRepository.GetAllAsync().Result.ToList();
+    }
+    public List<Produto> GetListaProdutosPorValorMaximo()
+    {
+        return _produtoRepository.GetAllAsync().Result
+            .GroupBy(x => x.Nome)
+            .Select(x => x.OrderByDescending(y => y.Valor)
+            .FirstOrDefault())
+            .ToList();
+    }
+    public List<Produto> GetListaProdutosPorValorMinimo()
+    {
+        return _produtoRepository.GetAllAsync().Result
+            .GroupBy(x => x.Nome)
+            .Select(x => x.OrderBy(y => y.Valor)
+            .FirstOrDefault())
+            .ToList();
     }
 
     public List<Produto> GetListaProdutosPorNome(string nome)
     {
-        var listaProdutos = GetListaProdutos();
 
-        return listaProdutos.Where(x => x.Nome == nome).ToList();
+        return _produtoRepository.GetAllAsync().Result
+                    .Where(palavra => RemoverAcentos(palavra.Nome)
+                    .Contains(nome, StringComparison.OrdinalIgnoreCase))
+                    .ToList();
+
     }
+
+    public List<Produto> GetListaProdutosPorIntervalo(int inicial, int final)
+    {
+        return _produtoRepository.GetAllAsync().Result.Where(x => x.Valor >= inicial && x.Valor <= final).ToList();
+    }
+
+    static string RemoverAcentos(string texto)
+    {
+        var normalizedString = texto.Normalize(NormalizationForm.FormD);
+        var sb = new StringBuilder();
+
+        foreach (var c in normalizedString)
+        {
+            var unicodeCategory = CharUnicodeInfo.GetUnicodeCategory(c);
+            if (unicodeCategory != UnicodeCategory.NonSpacingMark)
+            {
+                sb.Append(c);
+            }
+        }
+
+        return sb.ToString().Normalize(NormalizationForm.FormC);
+    }
+
 }
