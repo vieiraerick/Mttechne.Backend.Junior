@@ -1,32 +1,60 @@
-﻿using Mttechne.Backend.Junior.Services.Model;
+﻿using Mttechne.Backend.Junior.Services.Extensions;
+using Mttechne.Backend.Junior.Services.Interface;
+using Mttechne.Backend.Junior.Services.Model;
 
 namespace Mttechne.Backend.Junior.Services.Services;
 
 public class ProdutoService : IProdutoService
 {
-    public List<Produto> GetListaProdutos()
+    private readonly IProdutoRepository _produtoRepository;
+    public ProdutoService(IProdutoRepository produtoRepository)
     {
-        Produto produto1 = new Produto() { Nome = "Placa de Vídeo", Valor = 1000 };
-        Produto produto2 = new Produto() { Nome = "Placa de Vídeo", Valor = 1500 };
-        Produto produto3 = new Produto() { Nome = "Placa de Vídeo", Valor = 1350 };
-        Produto produto4 = new Produto() { Nome = "Processador", Valor = 2000 };
-        Produto produto5 = new Produto() { Nome = "Processador", Valor = 2100 };
-        Produto produto6 = new Produto() { Nome = "Memória", Valor = 300 };
-        Produto produto7 = new Produto() { Nome = "Memória", Valor = 350 };
-        Produto produto8 = new Produto() { Nome = "Placa mãe", Valor = 1100 };
-        
-        List<Produto> produtosCadastrados = new List<Produto>()
-        {
-            produto1, produto2, produto3, produto4, produto5, produto6, produto7, produto8
-        };
-        
-        return produtosCadastrados;
+        _produtoRepository = produtoRepository;
+
     }
 
-    public List<Produto> GetListaProdutosPorNome(string nome)
+    public IList<Produto> GetFaixaDePreco(decimal valorMin, decimal valorMax)
+    {
+        var lista = GetListaProdutos();
+        return lista.Where(x => x.Valor >= valorMin && x.Valor <= valorMax).ToList();
+    }
+
+    public IList<Produto> GetListaOrdenadaPorValorCrescente()
+    {
+        var Lista = GetListaProdutos();
+        return Lista.OrderBy(x => x.Valor).ToList();
+    }
+
+    public IList<Produto> GetListaOrdenadaPorValorDecrescente()
+    {
+        var Lista = GetListaProdutos();
+        return Lista.OrderByDescending(x => x.Valor).ToList();
+    }
+
+    public IList<Produto> GetListaProdutos()
+    {
+        return _produtoRepository.GetListaProdutos();
+    }
+
+    public IList<Produto> GetListaProdutosPorNome(string nome)
     {
         var listaProdutos = GetListaProdutos();
+        return listaProdutos.Where(x => x.Nome.ToUpper().RemoverAcentos().Contains(nome.ToUpper().RemoverAcentos())).ToList();
+      
 
-        return listaProdutos.Where(x => x.Nome == nome).ToList();
+    }
+
+    public IList<Produto> GetValorMaximo()
+    {
+        var lista = GetListaProdutos();
+        return lista.OrderByDescending(x =>
+        x.Valor).DistinctBy(x => x.Nome).ToList();
+    }
+
+    public IList<Produto> GetValorMinimo()
+    {
+        var lista = GetListaProdutos();
+        return lista.OrderBy(x =>
+        x.Valor).DistinctBy(x => x.Nome).ToList();
     }
 }
