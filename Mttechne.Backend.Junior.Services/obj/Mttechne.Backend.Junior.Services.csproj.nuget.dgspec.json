@@ -4,14 +4,14 @@
     "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj": {}
   },
   "projects": {
-    "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj": {
+    "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Domain\\Mttechne.Backend.Junior.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj",
-        "projectName": "Mttechne.Backend.Junior.Services",
-        "projectPath": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj",
+        "projectUniqueName": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Domain\\Mttechne.Backend.Junior.Domain.csproj",
+        "projectName": "Mttechne.Backend.Junior.Domain",
+        "projectPath": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Domain\\Mttechne.Backend.Junior.Domain.csproj",
         "packagesPath": "C:\\Users\\decas\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\obj\\",
+        "outputPath": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\decas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,7 +39,86 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.418\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj",
+        "projectName": "Mttechne.Backend.Junior.Services",
+        "projectPath": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj",
+        "packagesPath": "C:\\Users\\decas\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\decas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Domain\\Mttechne.Backend.Junior.Domain.csproj": {
+                "projectPath": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Domain\\Mttechne.Backend.Junior.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.26, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.26, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.26, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.26, )"
+            },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[8.0.0-preview.7.23375.6, )"

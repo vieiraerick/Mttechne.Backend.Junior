@@ -1,4 +1,5 @@
-﻿using Mttechne.Backend.Junior.Services.Model;
+﻿using Microsoft.EntityFrameworkCore;
+using Mttechne.Backend.Junior.Domain.Model;
 
 namespace Mttechne.Backend.Junior.Services.Services;
 
@@ -10,3 +11,10 @@ public interface IProdutoService
     List<Produto> GetListaProdutosPorNome(string nome);
     List<Produto> GetProdutosMaiorEMenorValor(bool valida);
 }
+
+public interface IProdutoRepository
+{
+    List<Produto> GetListaProdutos();
+
+}
+

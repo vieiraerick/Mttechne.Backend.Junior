@@ -1,7 +1,8 @@
-﻿namespace Mttechne.Backend.Junior.Services.Model;
+﻿namespace Mttechne.Backend.Junior.Domain.Model;
 
 public class Produto
 {
+    public int Id { get; set; }
     public string Nome { get; set; } = null!;
     public int Valor { get; set; }
 

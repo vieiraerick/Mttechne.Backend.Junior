@@ -1,4 +1,6 @@
-using Mttechne.Backend.Junior.Services;
+using Microsoft.EntityFrameworkCore;
+using Mttechne.Backend.Junior.CrossCutting;
+using Mttechne.Backend.Junior.Repository.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +11,16 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+var services = builder.Services;
+var config = builder.Configuration;
+
+
+services.AddDbContext<MyContext>(options =>
+{
+    options.UseSqlServer(config.GetConnectionString("Padrao"));
+});
+
 DependencyInjection.RegisterBindings(builder.Services);
 
 var app = builder.Build();
@@ -17,6 +29,7 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
+
     app.UseSwaggerUI();
 }
 

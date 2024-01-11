@@ -1,4 +1,7 @@
-using Mttechne.Backend.Junior.Services.Model;
+using Microsoft.EntityFrameworkCore;
+using Mttechne.Backend.Junior.Domain.Model;
+using Mttechne.Backend.Junior.Repository.Context;
+using Mttechne.Backend.Junior.Repository.Repository;
 using Mttechne.Backend.Junior.Services.Services;
 using System.Diagnostics;
 using Xunit.Sdk;
@@ -7,7 +10,10 @@ namespace Mttechne.Backend.Junior.UnitTests.Model;
 
 public class ProdutoTest
 {
+
+            
     private ProdutoService _validacoes = new ProdutoService();
+
     [Fact]
     public void ShouldCreateAProductWithSuccess()
     {
@@ -20,12 +26,8 @@ public class ProdutoTest
     [Fact]
     public void BuscaliLtagemProdutosPartirDeUmNome()
     {
-        Produto produto8 = new Produto() { Nome = "Placa mãe", Valor = 1100 };
+        Produto produto8 = new Produto() { Id = 8, Nome = "Placa mãe", Valor = 1100 };
 
-        List<Produto> produtosCadastrados = new List<Produto>()
-        {
-            produto8
-        };
 
         List<Produto> produtoEsperado = new List<Produto>()
         {
@@ -40,9 +42,9 @@ public class ProdutoTest
     [Fact]
     public void BuscarlistagemProdutosOrdenado()
     {
-        Produto produto1 = new Produto() { Nome = "Memória", Valor = 300 };
-        Produto produto2 = new Produto() { Nome = "Memória", Valor = 350 };
-        Produto produto3 = new Produto() { Nome = "Placa de Vídeo", Valor = 1000 };
+        Produto produto1 = new Produto() { Id = 6, Nome = "Memória", Valor = 300 };
+        Produto produto2 = new Produto() { Id = 7, Nome = "Memória", Valor = 350 };
+        Produto produto3 = new Produto() { Id = 1, Nome = "Placa de Vídeo", Valor = 1000 };
 
         List<Produto> produtosCadastrados = new List<Produto>()
         {
@@ -60,9 +62,9 @@ public class ProdutoTest
     [Fact]
     public void BuscarlistagemProdutosComRange()
     {
-        Produto produto1 = new Produto() { Nome = "Memória", Valor = 300 };
-        Produto produto2 = new Produto() { Nome = "Memória", Valor = 350 };
-        Produto produto3 = new Produto() { Nome = "Placa de Vídeo", Valor = 1000 };
+        Produto produto1 = new Produto() { Id = 6, Nome = "Memória", Valor = 300 };
+        Produto produto2 = new Produto() { Id = 7, Nome = "Memória", Valor = 350 };
+        Produto produto3 = new Produto() { Id = 1, Nome = "Placa de Vídeo", Valor = 1000 };
 
         List<Produto> produtosCadastrados = new List<Produto>()
         {
@@ -77,10 +79,10 @@ public class ProdutoTest
     [Fact]
     public void BuscarlistagemProdutosAgrupadoPeloMaiorValor()
     {
-        Produto produto1 = new Produto() { Nome = "Placa de Vídeo", Valor = 1500 };
-        Produto produto2 = new Produto() { Nome = "Processador", Valor = 2100 };
-        Produto produto3 = new Produto() { Nome = "Memória", Valor = 350 };
-        Produto produto4 = new Produto() { Nome = "Placa mãe", Valor = 1100 };
+        Produto produto1 = new Produto() { Id = 2, Nome = "Placa de Vídeo", Valor = 1500 };
+        Produto produto2 = new Produto() { Id = 5, Nome = "Processador", Valor = 2100 };
+        Produto produto3 = new Produto() { Id = 7, Nome = "Memória", Valor = 350 };
+        Produto produto4 = new Produto() { Id = 8, Nome = "Placa mãe", Valor = 1100 };
 
         List<Produto> produtosCadastrados = new List<Produto>()
         {
