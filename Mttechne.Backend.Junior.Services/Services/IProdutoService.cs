@@ -11,10 +11,3 @@ public interface IProdutoService
     List<Produto> GetListaProdutosPorNome(string nome);
     List<Produto> GetProdutosMaiorEMenorValor(bool valida);
 }
-
-public interface IProdutoRepository
-{
-    List<Produto> GetListaProdutos();
-
-}
-

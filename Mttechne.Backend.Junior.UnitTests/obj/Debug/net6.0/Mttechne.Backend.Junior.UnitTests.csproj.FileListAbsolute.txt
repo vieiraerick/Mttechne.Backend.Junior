@@ -427,3 +427,7 @@ C:\ProjetosDesafio\Mttechne.Backend.Junior\Mttechne.Backend.Junior.UnitTests\obj
 C:\ProjetosDesafio\Mttechne.Backend.Junior\Mttechne.Backend.Junior.UnitTests\obj\Debug\net6.0\Mttechne.Backend.Junior.UnitTests.pdb
 C:\ProjetosDesafio\Mttechne.Backend.Junior\Mttechne.Backend.Junior.UnitTests\obj\Debug\net6.0\Mttechne.Backend.Junior.UnitTests.genruntimeconfig.cache
 C:\ProjetosDesafio\Mttechne.Backend.Junior\Mttechne.Backend.Junior.UnitTests\obj\Debug\net6.0\ref\Mttechne.Backend.Junior.UnitTests.dll
+C:\ProjetosDesafio\Mttechne.Backend.Junior\Mttechne.Backend.Junior.UnitTests\bin\Debug\net6.0\AutoMapper.dll
+C:\ProjetosDesafio\Mttechne.Backend.Junior\Mttechne.Backend.Junior.UnitTests\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\ProjetosDesafio\Mttechne.Backend.Junior\Mttechne.Backend.Junior.UnitTests\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\ProjetosDesafio\Mttechne.Backend.Junior\Mttechne.Backend.Junior.UnitTests\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll

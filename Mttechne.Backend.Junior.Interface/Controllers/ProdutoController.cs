@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Mttechne.Backend.Junior.Services.Services;
 
 namespace Mttechne.Backend.Junior.Interface.Controllers;
 
 [ApiController]
+[Authorize]
 [Route("[controller]")]
 public class ProdutoController : ControllerBase
 {
