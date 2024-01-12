@@ -10,3 +10,17 @@ C:\Users\magai\OneDrive\Documentos\Mttechne\Mttechne.Backend.Junior\Mttechne.Bac
 C:\Users\magai\OneDrive\Documentos\Mttechne\Mttechne.Backend.Junior\Mttechne.Backend.Junior.Services\obj\Debug\net6.0\refint\Mttechne.Backend.Junior.Services.dll
 C:\Users\magai\OneDrive\Documentos\Mttechne\Mttechne.Backend.Junior\Mttechne.Backend.Junior.Services\obj\Debug\net6.0\Mttechne.Backend.Junior.Services.pdb
 C:\Users\magai\OneDrive\Documentos\Mttechne\Mttechne.Backend.Junior\Mttechne.Backend.Junior.Services\obj\Debug\net6.0\ref\Mttechne.Backend.Junior.Services.dll
+c:\Users\Matheus\Desktop\Teste\Mttechne.Backend.Junior\Mttechne.Backend.Junior.Services\bin\Debug\net6.0\Mttechne.Backend.Junior.Services.deps.json
+c:\Users\Matheus\Desktop\Teste\Mttechne.Backend.Junior\Mttechne.Backend.Junior.Services\bin\Debug\net6.0\Mttechne.Backend.Junior.Services.dll
+c:\Users\Matheus\Desktop\Teste\Mttechne.Backend.Junior\Mttechne.Backend.Junior.Services\bin\Debug\net6.0\Mttechne.Backend.Junior.Services.pdb
+c:\Users\Matheus\Desktop\Teste\Mttechne.Backend.Junior\Mttechne.Backend.Junior.Services\obj\Debug\net6.0\Mttechne.Backend.Junior.Services.csproj.AssemblyReference.cache
+c:\Users\Matheus\Desktop\Teste\Mttechne.Backend.Junior\Mttechne.Backend.Junior.Services\obj\Debug\net6.0\Mttechne.Backend.Junior.Services.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Matheus\Desktop\Teste\Mttechne.Backend.Junior\Mttechne.Backend.Junior.Services\obj\Debug\net6.0\Mttechne.Backend.Junior.Services.AssemblyInfoInputs.cache
+c:\Users\Matheus\Desktop\Teste\Mttechne.Backend.Junior\Mttechne.Backend.Junior.Services\obj\Debug\net6.0\Mttechne.Backend.Junior.Services.AssemblyInfo.cs
+c:\Users\Matheus\Desktop\Teste\Mttechne.Backend.Junior\Mttechne.Backend.Junior.Services\obj\Debug\net6.0\Mttechne.Backend.Junior.Services.csproj.CoreCompileInputs.cache
+c:\Users\Matheus\Desktop\Teste\Mttechne.Backend.Junior\Mttechne.Backend.Junior.Services\obj\Debug\net6.0\Mttechne.Backend.Junior.Services.dll
+c:\Users\Matheus\Desktop\Teste\Mttechne.Backend.Junior\Mttechne.Backend.Junior.Services\obj\Debug\net6.0\refint\Mttechne.Backend.Junior.Services.dll
+c:\Users\Matheus\Desktop\Teste\Mttechne.Backend.Junior\Mttechne.Backend.Junior.Services\obj\Debug\net6.0\Mttechne.Backend.Junior.Services.pdb
+c:\Users\Matheus\Desktop\Teste\Mttechne.Backend.Junior\Mttechne.Backend.Junior.Services\obj\Debug\net6.0\ref\Mttechne.Backend.Junior.Services.dll
+C:\Users\Matheus\Desktop\Teste\Mttechne.Backend.Junior\Mttechne.Backend.Junior.Services\bin\Debug\net6.0\Mttechne.Backend.Junior.Services.runtimeconfig.json
+C:\Users\Matheus\Desktop\Teste\Mttechne.Backend.Junior\Mttechne.Backend.Junior.Services\obj\Debug\net6.0\Mttechne.Backend.Junior.Services.genruntimeconfig.cache
