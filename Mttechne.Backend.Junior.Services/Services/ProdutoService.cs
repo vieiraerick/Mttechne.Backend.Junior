@@ -1,25 +1,25 @@
-﻿using Mttechne.Backend.Junior.Services.Model;
+﻿using Microsoft.EntityFrameworkCore;
+using Mttechne.Backend.Junior.Service.Helpers;
+using Mttechne.Backend.Junior.Services.Model;
+using Mttechne.Backend.Junior.Services.Services.Data;
 
 namespace Mttechne.Backend.Junior.Services.Services;
 
 public class ProdutoService : IProdutoService
 {
+    private readonly ApplicationDbContext _dbContext;
+    public ProdutoService(ApplicationDbContext dbContext)
+    {
+        _dbContext = dbContext;
+    }
+
     public List<Produto> GetListaProdutos()
     {
-        Produto produto1 = new Produto() { Nome = "Placa de Vídeo", Valor = 1000 };
-        Produto produto2 = new Produto() { Nome = "Placa de Vídeo", Valor = 1500 };
-        Produto produto3 = new Produto() { Nome = "Placa de Vídeo", Valor = 1350 };
-        Produto produto4 = new Produto() { Nome = "Processador", Valor = 2000 };
-        Produto produto5 = new Produto() { Nome = "Processador", Valor = 2100 };
-        Produto produto6 = new Produto() { Nome = "Memória", Valor = 300 };
-        Produto produto7 = new Produto() { Nome = "Memória", Valor = 350 };
-        Produto produto8 = new Produto() { Nome = "Placa mãe", Valor = 1100 };
-        
-        List<Produto> produtosCadastrados = new List<Produto>()
-        {
-            produto1, produto2, produto3, produto4, produto5, produto6, produto7, produto8
-        };
-        
+        var produtosCadastrados = _dbContext
+            .Produtos
+            .AsNoTracking()
+            .ToList();
+
         return produtosCadastrados;
     }
 
@@ -27,6 +27,57 @@ public class ProdutoService : IProdutoService
     {
         var listaProdutos = GetListaProdutos();
 
-        return listaProdutos.Where(x => x.Nome == nome).ToList();
+        nome = RemoveDiacritcsHelper
+             .RemoveDiacritics(nome)
+             .ToLower();
+
+        return listaProdutos
+            .Where(
+                x => RemoveDiacritcsHelper
+                .RemoveDiacritics(x.Nome)
+                .ToLower()
+                .Contains(nome)
+            )
+            .ToList();
+    }
+
+    public List<Produto> GetListaProdutosEntreValores(decimal min, decimal max)
+    {
+        var listaProdutos = _dbContext.Produtos;
+
+        return listaProdutos
+            .Where(x => x.Valor >= min && x.Valor <= max)
+            .AsNoTracking()
+            .ToList();
+    }
+
+    public List<Produto> GetListaValoresMaximos()
+    {
+        var listaProdutos = GetListaProdutos();
+
+        return listaProdutos
+            .GroupBy(x => x.Nome)
+            .Select(x => x.MaxBy(p => p.Valor))
+            .ToList();
+    }
+
+    public List<Produto> GetListaValoresMinimos()
+    {
+        var listaProdutos = GetListaProdutos();
+
+        return listaProdutos
+            .GroupBy(x => x.Nome)
+            .Select(x => x.MinBy(p => p.Valor))
+            .ToList();
+    }
+
+    public List<Produto> GetListaOrdenada(string ordem)
+    {
+        var listaProdutos = _dbContext.Produtos;
+
+        if (ordem == "asc")
+            return listaProdutos.OrderBy(x => x.Valor).ToList();
+        else
+            return listaProdutos.OrderByDescending(x => x.Valor).ToList();
     }
 }
