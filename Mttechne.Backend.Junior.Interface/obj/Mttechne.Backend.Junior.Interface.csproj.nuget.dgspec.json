@@ -1,20 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\Mttechne.Backend.Junior.Interface.csproj": {}
+    "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\Mttechne.Backend.Junior.Interface.csproj": {}
   },
   "projects": {
-    "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.CrossCutting\\Mttechne.Backend.Junior.CrossCutting.csproj": {
+    "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.CrossCutting\\Mttechne.Backend.Junior.CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.CrossCutting\\Mttechne.Backend.Junior.CrossCutting.csproj",
+        "projectUniqueName": "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.CrossCutting\\Mttechne.Backend.Junior.CrossCutting.csproj",
         "projectName": "Mttechne.Backend.Junior.CrossCutting",
-        "projectPath": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.CrossCutting\\Mttechne.Backend.Junior.CrossCutting.csproj",
-        "packagesPath": "C:\\Users\\decas\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.CrossCutting\\obj\\",
+        "projectPath": "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.CrossCutting\\Mttechne.Backend.Junior.CrossCutting.csproj",
+        "packagesPath": "C:\\Users\\55119\\.nuget\\packages\\",
+        "outputPath": "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.CrossCutting\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\decas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\55119\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,17 +27,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://189.113.15.118:8001/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Repository\\Mttechne.Backend.Junior.Repository.csproj": {
-                "projectPath": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Repository\\Mttechne.Backend.Junior.Repository.csproj"
+              "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Repository\\Mttechne.Backend.Junior.Repository.csproj": {
+                "projectPath": "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Repository\\Mttechne.Backend.Junior.Repository.csproj"
               },
-              "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj": {
-                "projectPath": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj"
+              "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj": {
+                "projectPath": "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj"
               }
             }
           }
@@ -62,21 +68,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.418\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Domain\\Mttechne.Backend.Junior.Domain.csproj": {
+    "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Domain\\Mttechne.Backend.Junior.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Domain\\Mttechne.Backend.Junior.Domain.csproj",
+        "projectUniqueName": "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Domain\\Mttechne.Backend.Junior.Domain.csproj",
         "projectName": "Mttechne.Backend.Junior.Domain",
-        "projectPath": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Domain\\Mttechne.Backend.Junior.Domain.csproj",
-        "packagesPath": "C:\\Users\\decas\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Domain\\obj\\",
+        "projectPath": "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Domain\\Mttechne.Backend.Junior.Domain.csproj",
+        "packagesPath": "C:\\Users\\55119\\.nuget\\packages\\",
+        "outputPath": "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\decas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\55119\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -84,6 +95,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://189.113.15.118:8001/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -117,21 +129,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.418\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\Mttechne.Backend.Junior.Interface.csproj": {
+    "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\Mttechne.Backend.Junior.Interface.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\Mttechne.Backend.Junior.Interface.csproj",
+        "projectUniqueName": "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\Mttechne.Backend.Junior.Interface.csproj",
         "projectName": "Mttechne.Backend.Junior.Interface",
-        "projectPath": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\Mttechne.Backend.Junior.Interface.csproj",
-        "packagesPath": "C:\\Users\\decas\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\obj\\",
+        "projectPath": "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\Mttechne.Backend.Junior.Interface.csproj",
+        "packagesPath": "C:\\Users\\55119\\.nuget\\packages\\",
+        "outputPath": "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\decas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\55119\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -139,14 +156,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://189.113.15.118:8001/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.CrossCutting\\Mttechne.Backend.Junior.CrossCutting.csproj": {
-                "projectPath": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.CrossCutting\\Mttechne.Backend.Junior.CrossCutting.csproj"
+              "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.CrossCutting\\Mttechne.Backend.Junior.CrossCutting.csproj": {
+                "projectPath": "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.CrossCutting\\Mttechne.Backend.Junior.CrossCutting.csproj"
               }
             }
           }
@@ -191,21 +209,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.418\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Repository\\Mttechne.Backend.Junior.Repository.csproj": {
+    "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Repository\\Mttechne.Backend.Junior.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Repository\\Mttechne.Backend.Junior.Repository.csproj",
+        "projectUniqueName": "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Repository\\Mttechne.Backend.Junior.Repository.csproj",
         "projectName": "Mttechne.Backend.Junior.Repository",
-        "projectPath": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Repository\\Mttechne.Backend.Junior.Repository.csproj",
-        "packagesPath": "C:\\Users\\decas\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Repository\\obj\\",
+        "projectPath": "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Repository\\Mttechne.Backend.Junior.Repository.csproj",
+        "packagesPath": "C:\\Users\\55119\\.nuget\\packages\\",
+        "outputPath": "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Repository\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\decas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\55119\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -213,17 +236,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://189.113.15.118:8001/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Domain\\Mttechne.Backend.Junior.Domain.csproj": {
-                "projectPath": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Domain\\Mttechne.Backend.Junior.Domain.csproj"
+              "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Domain\\Mttechne.Backend.Junior.Domain.csproj": {
+                "projectPath": "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Domain\\Mttechne.Backend.Junior.Domain.csproj"
               },
-              "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj": {
-                "projectPath": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj"
+              "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj": {
+                "projectPath": "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj"
               }
             }
           }
@@ -283,21 +307,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.418\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj": {
+    "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj",
+        "projectUniqueName": "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj",
         "projectName": "Mttechne.Backend.Junior.Services",
-        "projectPath": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj",
-        "packagesPath": "C:\\Users\\decas\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\obj\\",
+        "projectPath": "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj",
+        "packagesPath": "C:\\Users\\55119\\.nuget\\packages\\",
+        "outputPath": "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\decas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\55119\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -305,14 +334,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://189.113.15.118:8001/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Domain\\Mttechne.Backend.Junior.Domain.csproj": {
-                "projectPath": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Domain\\Mttechne.Backend.Junior.Domain.csproj"
+              "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Domain\\Mttechne.Backend.Junior.Domain.csproj": {
+                "projectPath": "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Domain\\Mttechne.Backend.Junior.Domain.csproj"
               }
             }
           }
@@ -368,7 +398,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.418\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

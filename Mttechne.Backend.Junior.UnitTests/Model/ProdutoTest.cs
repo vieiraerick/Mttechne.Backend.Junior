@@ -1,18 +1,19 @@
-using Microsoft.EntityFrameworkCore;
+using Moq;
 using Mttechne.Backend.Junior.Domain.Model;
-using Mttechne.Backend.Junior.Repository.Context;
-using Mttechne.Backend.Junior.Repository.Repository;
 using Mttechne.Backend.Junior.Services.Services;
-using System.Diagnostics;
-using Xunit.Sdk;
 
 namespace Mttechne.Backend.Junior.UnitTests.Model;
 
 public class ProdutoTest
 {
+    private readonly IProdutoService _service;
+    private readonly Mock<IProdutoRepository> _repository;
 
-            
-    private ProdutoService _validacoes = new ProdutoService();
+    public ProdutoTest()
+    {
+        _repository = new Mock<IProdutoRepository>();
+        _service = new ProdutoService(_repository.Object);
+    }
 
     [Fact]
     public void ShouldCreateAProductWithSuccess()
@@ -22,6 +23,33 @@ public class ProdutoTest
         Assert.Equal(100, teclado.Valor);
         Assert.Equal("Teclado", teclado.Nome);
     }
+
+
+    [Fact]
+    public void BuscaliLtagemProdutosAll()
+    {
+        List<Produto> produtoEsperado = new List<Produto>()
+        {
+            new Produto() { Id = 1, Nome = "Placa de Vídeo", Valor = 1000 },
+            new Produto() { Id = 2, Nome = "Placa de Vídeo", Valor = 1500 },
+            new Produto() { Id = 3, Nome = "Placa de Vídeo", Valor = 1350 },
+            new Produto() { Id = 4, Nome = "Processador", Valor = 2000 },
+            new Produto() { Id = 5, Nome = "Processador", Valor = 2100 },
+            new Produto() { Id = 6, Nome = "Memória", Valor = 300 },
+            new Produto() { Id = 7, Nome = "Memória", Valor = 350 },
+            new Produto() { Id = 8, Nome = "Placa mãe", Valor = 1100 }
+        };
+
+
+        _repository.Setup(v=> v.GetListaProdutos())
+                   .Returns(produtoEsperado);
+
+        var resultado = _service.GetListaProdutos();
+
+        Assert.True(produtoEsperado.SequenceEqual(resultado));
+    }
+
+
 
     [Fact]
     public void BuscaliLtagemProdutosPartirDeUmNome()
@@ -34,7 +62,11 @@ public class ProdutoTest
             produto8
         };
 
-        var resultado = _validacoes.GetListaProdutosPorNome("Placa mãe");
+        _repository.Setup(v => v.GetListaProdutos())
+                .Returns(produtoEsperado);
+
+        var resultado = _service.GetListaProdutosPorNome("Placa mãe");
+        
 
         Assert.True(produtoEsperado.SequenceEqual(resultado));
     }
@@ -46,17 +78,19 @@ public class ProdutoTest
         Produto produto2 = new Produto() { Id = 7, Nome = "Memória", Valor = 350 };
         Produto produto3 = new Produto() { Id = 1, Nome = "Placa de Vídeo", Valor = 1000 };
 
-        List<Produto> produtosCadastrados = new List<Produto>()
+        List<Produto> produtoEsperado = new List<Produto>()
         {
             produto1, produto2, produto3
         };
+        _repository.Setup(v => v.GetListaProdutos())
+             .Returns(produtoEsperado);
 
-        var resultado = _validacoes.GetListaProdutosOrdenado(true, false);
+        var resultado = _service.GetListaProdutosOrdenado(true, false);
 
         resultado = resultado.Take(3).ToList();
 
 
-        Assert.True(resultado.SequenceEqual(produtosCadastrados));
+        Assert.True(resultado.SequenceEqual(produtoEsperado));
     }
 
     [Fact]
@@ -66,14 +100,17 @@ public class ProdutoTest
         Produto produto2 = new Produto() { Id = 7, Nome = "Memória", Valor = 350 };
         Produto produto3 = new Produto() { Id = 1, Nome = "Placa de Vídeo", Valor = 1000 };
 
-        List<Produto> produtosCadastrados = new List<Produto>()
+        List<Produto> produtoEsperado = new List<Produto>()
         {
             produto1, produto2, produto3
         };
 
-        var resultado = _validacoes.GetListaRangeValoresProduto(10, 1001).Take(3);
+        _repository.Setup(v => v.GetListaProdutos())
+             .Returns(produtoEsperado);
 
-        Assert.True(resultado.SequenceEqual(produtosCadastrados));
+        var resultado = _service.GetListaRangeValoresProduto(10, 1001).Take(3);
+
+        Assert.True(resultado.SequenceEqual(produtoEsperado));
     }
 
     [Fact]
@@ -84,13 +121,16 @@ public class ProdutoTest
         Produto produto3 = new Produto() { Id = 7, Nome = "Memória", Valor = 350 };
         Produto produto4 = new Produto() { Id = 8, Nome = "Placa mãe", Valor = 1100 };
 
-        List<Produto> produtosCadastrados = new List<Produto>()
+        List<Produto> produtoEsperado = new List<Produto>()
         {
             produto1, produto2, produto3, produto4
         };
 
-        var resultado = _validacoes.GetProdutosMaiorEMenorValor(true);
+        _repository.Setup(v => v.GetListaProdutos())
+           .Returns(produtoEsperado);
 
-        Assert.True(resultado.SequenceEqual(produtosCadastrados));
+        var resultado = _service.GetProdutosMaiorEMenorValor(true);
+
+        Assert.True(resultado.SequenceEqual(produtoEsperado));
     }
 }

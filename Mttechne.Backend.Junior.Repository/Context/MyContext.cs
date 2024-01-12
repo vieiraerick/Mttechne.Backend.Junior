@@ -21,7 +21,7 @@ public class MyContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Produto>().HasData(
-        new Produto() { Id = 1, Nome = "Placa de Vídeo", Valor = 1000 },
+            new Produto() { Id = 1, Nome = "Placa de Vídeo", Valor = 1000 },
             new Produto() { Id = 2, Nome = "Placa de Vídeo", Valor = 1500 },
             new Produto() { Id = 3, Nome = "Placa de Vídeo", Valor = 1350 },
             new Produto() { Id = 4, Nome = "Processador", Valor = 2000 },

@@ -2654,19 +2654,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\decas\\.nuget\\packages\\": {}
+    "C:\\Users\\55119\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\Mttechne.Backend.Junior.Interface.csproj",
+      "projectUniqueName": "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\Mttechne.Backend.Junior.Interface.csproj",
       "projectName": "Mttechne.Backend.Junior.Interface",
-      "projectPath": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\Mttechne.Backend.Junior.Interface.csproj",
-      "packagesPath": "C:\\Users\\decas\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\obj\\",
+      "projectPath": "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\Mttechne.Backend.Junior.Interface.csproj",
+      "packagesPath": "C:\\Users\\55119\\.nuget\\packages\\",
+      "outputPath": "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\decas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\55119\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2674,14 +2681,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://189.113.15.118:8001/nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.CrossCutting\\Mttechne.Backend.Junior.CrossCutting.csproj": {
-              "projectPath": "D:\\Users\\denis\\MeusProjetos\\Projeto\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.CrossCutting\\Mttechne.Backend.Junior.CrossCutting.csproj"
+            "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.CrossCutting\\Mttechne.Backend.Junior.CrossCutting.csproj": {
+              "projectPath": "C:\\ProjetosDesafio\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.CrossCutting\\Mttechne.Backend.Junior.CrossCutting.csproj"
             }
           }
         }
@@ -2726,8 +2734,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.418\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Você está executando a operação 'restore' com uma fonte 'HTTP', 'http://189.113.15.118:8001/nuget'. O acesso não HTTPS será removido em uma versão futura. Considere migrar para uma fonte 'HTTPS'."
+    }
+  ]
 }

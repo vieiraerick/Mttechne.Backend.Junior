@@ -14,9 +14,7 @@ public class ProdutoService : IProdutoService
             _produtoRepostory = produtoRepostory;
     }
 
-    public ProdutoService()
-    {
-    }
+   
     public List<Produto> GetListaProdutos()
     {
         var resultado = _produtoRepostory.GetListaProdutos();
@@ -43,8 +41,7 @@ public class ProdutoService : IProdutoService
         nome = RemoverAcentos(nome);
 
         var resultados = listaProdutos.Where(produto =>
-           RemoverAcentos(produto.Nome).IndexOf(nome, StringComparison.OrdinalIgnoreCase) >= 0
-       );
+           RemoverAcentos(produto.Nome) == nome);
 
         return resultados.ToList();
     }
@@ -96,8 +93,8 @@ public class ProdutoService : IProdutoService
         if (string.IsNullOrEmpty(texto))
             return texto;
 
-        string comAcentos = "áéíóúÁÉÍÓÚâêîôÂÊÎÔãõÃÕàÀüÜçÇ";
-        string semAcentos = "aeiouAEIOUaeiouAEIOUaoAOuUcC";
+        string comAcentos = "áéíóúÁÉÍÓÚâêîôÂÊÎÔõÃÕàÀüÜçÇã";
+        string semAcentos = "aeiouAEIOUaeiouAEIUaoAOuUcCa";
 
         for (int i = 0; i < comAcentos.Length; i++)
         {
