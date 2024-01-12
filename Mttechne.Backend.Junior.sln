@@ -1,10 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mttechne.Backend.Junior.Interface", "Mttechne.Backend.Junior.Interface\Mttechne.Backend.Junior.Interface.csproj", "{D7980932-14CF-409C-937E-3FD2B14E385B}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mttechne.Backend.Junior.Interface", "Mttechne.Backend.Junior.Interface\Mttechne.Backend.Junior.Interface.csproj", "{D7980932-14CF-409C-937E-3FD2B14E385B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mttechne.Backend.Junior.Services", "Mttechne.Backend.Junior.Services\Mttechne.Backend.Junior.Services.csproj", "{F97F0102-764C-4421-A54C-EAFE4E721CA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mttechne.Backend.Junior.Services", "Mttechne.Backend.Junior.Services\Mttechne.Backend.Junior.Services.csproj", "{F97F0102-764C-4421-A54C-EAFE4E721CA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mttechne.Backend.Junior.UnitTests", "Mttechne.Backend.Junior.UnitTests\Mttechne.Backend.Junior.UnitTests.csproj", "{F5FE1776-B549-4CE8-A863-6F2DAF3E7D13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mttechne.Backend.Junior.UnitTests", "Mttechne.Backend.Junior.UnitTests\Mttechne.Backend.Junior.UnitTests.csproj", "{F5FE1776-B549-4CE8-A863-6F2DAF3E7D13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mttechne.Backend.Junior.Repository", "Mttechne.Backend.Junior.Repository\Mttechne.Backend.Junior.Repository.csproj", "{679D68BA-D8D5-4E45-B844-42B10DA6285C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mttechne.Backend.Junior.Domain", "Mttechne.Backend.Junior.Domain\Mttechne.Backend.Junior.Domain.csproj", "{F345AFDB-AC75-4038-9310-5BB9E6881023}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mttechne.Backend.Junior.CrossCutting", "Mttechne.Backend.Junior.CrossCutting\Mttechne.Backend.Junior.CrossCutting.csproj", "{BDB2F289-0302-4308-852E-3B3A469C4561}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +33,23 @@ Global
 		{F5FE1776-B549-4CE8-A863-6F2DAF3E7D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5FE1776-B549-4CE8-A863-6F2DAF3E7D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5FE1776-B549-4CE8-A863-6F2DAF3E7D13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{679D68BA-D8D5-4E45-B844-42B10DA6285C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{679D68BA-D8D5-4E45-B844-42B10DA6285C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{679D68BA-D8D5-4E45-B844-42B10DA6285C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{679D68BA-D8D5-4E45-B844-42B10DA6285C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F345AFDB-AC75-4038-9310-5BB9E6881023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F345AFDB-AC75-4038-9310-5BB9E6881023}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F345AFDB-AC75-4038-9310-5BB9E6881023}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F345AFDB-AC75-4038-9310-5BB9E6881023}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDB2F289-0302-4308-852E-3B3A469C4561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDB2F289-0302-4308-852E-3B3A469C4561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDB2F289-0302-4308-852E-3B3A469C4561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDB2F289-0302-4308-852E-3B3A469C4561}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27FCD2EF-0A74-4315-BFE9-142EE0D3B920}
 	EndGlobalSection
 EndGlobal
