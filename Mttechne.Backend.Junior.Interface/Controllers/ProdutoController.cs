@@ -11,14 +11,10 @@ namespace Mttechne.Backend.Junior.Interface.Controllers;
 public class ProdutoController : ControllerBase
 {
     private readonly IProdutoService _service;
-    private readonly IAttributeValidationStrategy _attributeValidationStrategy;
-    private readonly ProductValidationStrategy _produtoValidationStrategy;
 
-    public ProdutoController(IProdutoService service, IAttributeValidationStrategy attributeValidationStrategy, IObjectValidationStrategy<Produto> objectValidationStrategy)
+    public ProdutoController(IProdutoService service)
     {
         _service = service;
-        _attributeValidationStrategy = attributeValidationStrategy;
-        _produtoValidationStrategy = (ProductValidationStrategy)objectValidationStrategy;
     }
 
     [HttpGet]
@@ -27,34 +23,39 @@ public class ProdutoController : ControllerBase
     [HttpGet("{nome}")]
     public async Task<IActionResult> GetListaProdutosProNome([FromRoute] string nome)
     {
-        if (!_attributeValidationStrategy.IsNameValid(nome))
-            return BadRequest(_attributeValidationStrategy.RetornarErros());
+        
+        var resultado = await _service.GetListaProdutosPorNome(nome);
 
-        return Ok(await _service.GetListaProdutosPorNome(nome));
+        if(resultado == null)
+            return BadRequest(_service.Erros);
+
+        return Ok(resultado);
     }
 
     [HttpGet]
     [Route("ValorCrescente")]
     public async Task<IActionResult> GetListaValorCrescente()
     {
-        return Ok(await _service.GetListaValorCresceste());
+        return Ok(await _service.GetListaValorOrdenado(true));
     }
 
     [HttpGet]
     [Route("ValorDecrescente")]
     public async Task<IActionResult> GetListaValorDecrescente()
     {
-        return Ok(await _service.GetListaValorDecresceste());
+        return Ok(await _service.GetListaValorOrdenado(false));
     }
 
     [HttpGet]
     [Route("EntreValores")]
     public async Task<IActionResult> GetListaProdutosEntreValores([FromQuery] decimal minimo, [FromQuery] decimal maximo)
     {
-        if(!_produtoValidationStrategy.IsMaximoMinimoValid(minimo,maximo))
-            return BadRequest(_produtoValidationStrategy.RetornarErros());
-            
-        return Ok(await _service.GetListaFaixaValor(minimo, maximo));
+         var resultado = await _service.GetListaFaixaValor(minimo, maximo);
+        
+        if(resultado == null)
+            return BadRequest(_service.Erros);
+
+        return Ok(resultado);
     }
 
     [HttpGet]

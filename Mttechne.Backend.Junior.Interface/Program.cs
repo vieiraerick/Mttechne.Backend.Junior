@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Mttechne.Backend.Junior.Services;
+using Mttechne.Backend.Junior.Services.Configuration;
 using Mttechne.Backend.Junior.Services.Data;
 
 var builder = WebApplication.CreateBuilder(args);

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+dUmIySO8m4S6U8hHWS1EgXqaMu30D5SxL6tDRns2CmsK4OouhM0XL0cQImX724eh04xjoD+Q3lZxEWM7mJt8A==",
+  "dgSpecHash": "HPmT00whf1IwLufrfvaZYDYMebFizlTzJa5G8TsXxEBHNt2VlFVfwvyBS7Jo8FxaTAVHDfU5OSZ8pOmFYiHKnA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj",
+  "projectFilePath": "c:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Matheus\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Matheus\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.26\\microsoft.entityframeworkcore.6.0.26.nupkg.sha512",
