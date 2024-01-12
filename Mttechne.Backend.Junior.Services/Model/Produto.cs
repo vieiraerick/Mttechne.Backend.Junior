@@ -2,6 +2,7 @@
 
 public class Produto
 {
-    public string Nome { get; set; } = null!;
+    public Guid Id { get; set; }
+    public string Nome { get; set; }
     public int Valor { get; set; }
 }

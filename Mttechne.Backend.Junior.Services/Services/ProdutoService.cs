@@ -1,32 +1,78 @@
 ﻿using Mttechne.Backend.Junior.Services.Model;
+using System.Globalization;
+using System.Text;
 
-namespace Mttechne.Backend.Junior.Services.Services;
-
-public class ProdutoService : IProdutoService
+namespace Mttechne.Backend.Junior.Services.Services
 {
-    public List<Produto> GetListaProdutos()
+    public class ProdutoService : IProdutoService
     {
-        Produto produto1 = new Produto() { Nome = "Placa de Vídeo", Valor = 1000 };
-        Produto produto2 = new Produto() { Nome = "Placa de Vídeo", Valor = 1500 };
-        Produto produto3 = new Produto() { Nome = "Placa de Vídeo", Valor = 1350 };
-        Produto produto4 = new Produto() { Nome = "Processador", Valor = 2000 };
-        Produto produto5 = new Produto() { Nome = "Processador", Valor = 2100 };
-        Produto produto6 = new Produto() { Nome = "Memória", Valor = 300 };
-        Produto produto7 = new Produto() { Nome = "Memória", Valor = 350 };
-        Produto produto8 = new Produto() { Nome = "Placa mãe", Valor = 1100 };
-        
-        List<Produto> produtosCadastrados = new List<Produto>()
+        private readonly List<Produto> _produtos;
+
+        public ProdutoService()
         {
-            produto1, produto2, produto3, produto4, produto5, produto6, produto7, produto8
-        };
-        
-        return produtosCadastrados;
-    }
+            _produtos = new List<Produto>
+            {
+                new Produto { Nome = "Placa de Vídeo", Valor = 1000 },
+                new Produto { Nome = "Placa de Vídeo", Valor = 1500 },
+                new Produto { Nome = "Placa de Vídeo", Valor = 1350 },
+                new Produto { Nome = "Processador", Valor = 2000 },
+                new Produto { Nome = "Processador", Valor = 2100 },
+                new Produto { Nome = "Memória", Valor = 300 },
+                new Produto { Nome = "Memória", Valor = 350 },
+                new Produto { Nome = "Placa mãe", Valor = 1100 }
+            };
+        }
 
-    public List<Produto> GetListaProdutosPorNome(string nome)
-    {
-        var listaProdutos = GetListaProdutos();
+        public List<Produto> GetListaProdutos()
+        {
+            return _produtos;
+        }
 
-        return listaProdutos.Where(x => x.Nome == nome).ToList();
+        public List<Produto> GetListaProdutosPorNome(string nome)
+        {
+            if (string.IsNullOrEmpty(nome))
+                throw new Exception("Nome inválido.");
+
+            return _produtos.Where(p => RemoveAcentuacao(p.Nome.ToLower()).Contains(RemoveAcentuacao(nome.ToLower()))).ToList();
+        }
+
+        public List<Produto> GetListaProdutosOrdenadaPorValor(bool ehCrescente)
+        {
+            return ehCrescente ? _produtos.OrderBy(x => x.Valor).ToList() : _produtos.OrderByDescending(x => x.Valor).ToList();
+        }
+
+        public List<Produto> GetListaProdutosPorFaixaDePreco(int valorMinimo, int valorMaximo)
+        {
+            return _produtos
+                .Where(x => x.Valor >= valorMinimo && x.Valor <= valorMaximo)
+                .ToList();
+        }
+
+        public List<Produto> GetProdutosValoresMaximos()
+        {
+            return _produtos
+                .GroupBy(x => x.Nome)
+                .Select(p => p.OrderByDescending(g => g.Valor).First())
+                .ToList();
+        }
+
+        public List<Produto> GetProdutosValoresMinimos()
+        {
+            return _produtos
+                .GroupBy(x => x.Nome)
+                .Select(p => p.OrderBy(g => g.Valor).First())
+                .ToList();
+        }
+
+        private static string RemoveAcentuacao(string value)
+        {
+            string valorNormalizado = value.Normalize(NormalizationForm.FormD);
+
+            string valorFiltrado = new(valorNormalizado
+                .Where(c => CharUnicodeInfo.GetUnicodeCategory(c) != UnicodeCategory.NonSpacingMark)
+                .ToArray());
+
+            return valorFiltrado;
+        }
     }
 }
