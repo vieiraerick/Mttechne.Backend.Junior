@@ -26,7 +26,7 @@ public class ProdutoController : ControllerBase
         
         var resultado = await _service.GetListaProdutosPorNome(nome);
 
-        if(resultado == null)
+        if(resultado.Count() == 0)
             return BadRequest(_service.Erros);
 
         return Ok(resultado);
@@ -52,7 +52,7 @@ public class ProdutoController : ControllerBase
     {
          var resultado = await _service.GetListaFaixaValor(minimo, maximo);
         
-        if(resultado == null)
+        if(resultado.Count() == 0)
             return BadRequest(_service.Erros);
 
         return Ok(resultado);

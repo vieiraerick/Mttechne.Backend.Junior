@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dWclCgVnRy38FACgjh26BorJY/Qj9gIL3upVDoMhQr2s8ajLQg3+ETdXcS6mQa0d3QfBJEk5xwY96Kmyu4o0+A==",
+  "dgSpecHash": "QgLFLwQYFeLIU+s2VpB4YLniL5QluoFO5AXtzD/Z5cSR069uwC/Pjv9h58ZrIi5QIPPoGx+x6PC25JNRY7Kwvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\Mttechne.Backend.Junior.Interface.csproj",
+  "projectFilePath": "c:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\Mttechne.Backend.Junior.Interface.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Matheus\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.26\\microsoft.entityframeworkcore.6.0.26.nupkg.sha512",
     "C:\\Users\\Matheus\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.26\\microsoft.entityframeworkcore.abstractions.6.0.26.nupkg.sha512",

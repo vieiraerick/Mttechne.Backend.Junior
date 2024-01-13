@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.UnitTests\\Mttechne.Backend.Junior.UnitTests.csproj": {}
+    "c:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.UnitTests\\Mttechne.Backend.Junior.UnitTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\Mttechne.Backend.Junior.Interface.csproj": {
+    "c:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\Mttechne.Backend.Junior.Interface.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\Mttechne.Backend.Junior.Interface.csproj",
+        "projectUniqueName": "c:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\Mttechne.Backend.Junior.Interface.csproj",
         "projectName": "Mttechne.Backend.Junior.Interface",
-        "projectPath": "C:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\Mttechne.Backend.Junior.Interface.csproj",
+        "projectPath": "c:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\Mttechne.Backend.Junior.Interface.csproj",
         "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\obj\\",
+        "outputPath": "c:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "c:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj": {
-                "projectPath": "c:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj"
+              "C:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj": {
+                "projectPath": "C:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj"
               }
             }
           }
@@ -70,14 +70,14 @@
         }
       }
     },
-    "c:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj": {
+    "C:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj",
+        "projectUniqueName": "C:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj",
         "projectName": "Mttechne.Backend.Junior.Services",
-        "projectPath": "c:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj",
+        "projectPath": "C:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj",
         "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\obj\\",
+        "outputPath": "C:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -149,14 +149,14 @@
         }
       }
     },
-    "C:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.UnitTests\\Mttechne.Backend.Junior.UnitTests.csproj": {
+    "c:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.UnitTests\\Mttechne.Backend.Junior.UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.UnitTests\\Mttechne.Backend.Junior.UnitTests.csproj",
+        "projectUniqueName": "c:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.UnitTests\\Mttechne.Backend.Junior.UnitTests.csproj",
         "projectName": "Mttechne.Backend.Junior.UnitTests",
-        "projectPath": "C:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.UnitTests\\Mttechne.Backend.Junior.UnitTests.csproj",
+        "projectPath": "c:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.UnitTests\\Mttechne.Backend.Junior.UnitTests.csproj",
         "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.UnitTests\\obj\\",
+        "outputPath": "c:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.UnitTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -171,11 +171,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\Mttechne.Backend.Junior.Interface.csproj": {
-                "projectPath": "C:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\Mttechne.Backend.Junior.Interface.csproj"
+              "c:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\Mttechne.Backend.Junior.Interface.csproj": {
+                "projectPath": "c:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Interface\\Mttechne.Backend.Junior.Interface.csproj"
               },
-              "c:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj": {
-                "projectPath": "c:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj"
+              "C:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj": {
+                "projectPath": "C:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj"
               }
             }
           }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj": {}
+    "C:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj": {
+    "C:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj",
+        "projectUniqueName": "C:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj",
         "projectName": "Mttechne.Backend.Junior.Services",
-        "projectPath": "c:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj",
+        "projectPath": "C:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\Mttechne.Backend.Junior.Services.csproj",
         "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\obj\\",
+        "outputPath": "C:\\Users\\Matheus\\Documents\\Mttechne.Backend.Junior\\Mttechne.Backend.Junior.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Mttechne.Backend.Junior.Services.Data;
+using Mttechne.Backend.Junior.Services.Data.Repositories.interfaces;
 using Mttechne.Backend.Junior.Services.Extensions;
 using Mttechne.Backend.Junior.Services.Model;
 using Mttechne.Backend.Junior.Services.Strategies;
@@ -10,47 +11,50 @@ namespace Mttechne.Backend.Junior.Services.Services;
 public class ProdutoService : IProdutoService
 {
 
-    private readonly AppDbContext _appDbContext;
+    private readonly IProdutoRepository _productRepository;
     private readonly IAttributeValidationStrategy _attributeValidationStrategy;
     private readonly ProductValidationStrategy _produtoValidationStrategy;
 
 
     public string Erros => _attributeValidationStrategy.RetornarErros() + _produtoValidationStrategy.RetornarErros();
 
-    public ProdutoService(AppDbContext appDbContext , IAttributeValidationStrategy attributeValidationStrategy, IObjectValidationStrategy<Produto> objectValidationStrategy)
+    public ProdutoService(IProdutoRepository iRepository , IAttributeValidationStrategy attributeValidationStrategy)
     {
-        _appDbContext = appDbContext;
+        _productRepository = iRepository;
         _attributeValidationStrategy = attributeValidationStrategy;
-        _produtoValidationStrategy = (ProductValidationStrategy)objectValidationStrategy;
+        _produtoValidationStrategy = new ProductValidationStrategy(new AttributeValidationStrategy());
     }
-    public async Task<List<Produto>> GetListaProdutos() => await _appDbContext.Produtos.ToListAsync();
+    public async Task<List<Produto>> GetListaProdutos() => await _productRepository.GetListaProdutos();
     public async Task<List<Produto>> GetListaProdutosPorNome(string nome)
     {
 
         if (!_attributeValidationStrategy.IsNameValid(nome))
-            return null;
+        {
+            return new List<Produto>();
+        }
+            
 
-        return (await GetListaProdutos()).Where(x => x.Nome.RemoverAcentuacao().IndexOf(nome.RemoverAcentuacao(), StringComparison.OrdinalIgnoreCase) >= 0).ToList();
+        return await _productRepository.GetListaProdutosPorNome(nome);
     }
        
 
     public async Task<List<Produto>> GetListaValorOrdenado(bool crescente) => crescente ?
-        (await GetListaProdutos()).OrderBy(x => x.Valor).ToList() : (await GetListaProdutos()).OrderByDescending(x => x.Valor).ToList();
+        await _productRepository.GetListaValorOrdenado(true) :  await _productRepository.GetListaValorOrdenado(false);
 
         
     public async Task<List<Produto>> GetListaFaixaValor(decimal minimo,decimal maximo)
     {
         if(!_produtoValidationStrategy.IsMaximoMinimoValid(minimo,maximo))
-              return null;         
+              return new List<Produto>();         
 
-        return (await GetListaProdutos()).Where(x => x.Valor >= minimo && x.Valor <= maximo).OrderBy(x => x.Valor).ToList();
+        return await _productRepository.GetListaFaixaValor(minimo,maximo);
     }
         
 
     public async Task<List<Produto>> GetListaMinValor() =>
-        (await GetListaProdutos()).OrderBy(p => p.Valor).Take(1).ToList();
+        await _productRepository.GetListaMinValor();
     
     public async Task<List<Produto>> GetListaMaxValor() =>
-        (await GetListaProdutos()).OrderByDescending(p => p.Valor).Take(1).ToList();
+        await _productRepository.GetListaMaxValor();
 
 }

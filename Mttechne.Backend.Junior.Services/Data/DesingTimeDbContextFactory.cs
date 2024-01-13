@@ -1,23 +1,15 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
-using Microsoft.Extensions.Configuration;
 
 namespace Mttechne.Backend.Junior.Services.Data
 {
     public class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<AppDbContext>
     {
 
-        IConfiguration _configuration;
-        public DesignTimeDbContextFactory(IConfiguration configuration)
-        {
-            _configuration = configuration;
-        }
-        
         public AppDbContext CreateDbContext(string[] args)
         {
-            // Configure as opções de contexto aqui
             var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
-            string? connectionString = _configuration.GetSection("ConnectionString").GetSection("DBConnectionString").Value;
+            string? connectionString = "Server=10.0.2.51;Database=DBTestePlenoMttechne;User=teste;Password=Teste123#;";
             optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
 
             return new AppDbContext(optionsBuilder.Options);

@@ -27,12 +27,12 @@ namespace Mttechne.Backend.Junior.Services.Strategies
         {
             if(string.IsNullOrWhiteSpace(name))
             {
-                _erros += "Não foi informado o nome.\n";
+                _erros = "Não foi informado o nome.\n";
                 _result = false;
             }
             else if(name.Length <= 2)
             {
-                _erros += "Nome informado é muito curto.\n";
+                _erros = "Nome informado é muito curto.\n";
                 _result = false;
             }
                 
